@@ -1,0 +1,45 @@
+:root{
+  --gray: #302c2c;
+  --light-orange: #ffcc14;
+  --tiffany: #a8e4c4;
+  --dark-purple: #3c3454;
+  --light-gray: #e0dfd5;
+  --yellow: #ffcc14;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@keyframes pulse {
+  0% {
+   transform: scale(1, 1);
+  }
+
+  50% {
+   transform: scale(1.1, 1.1);
+  }
+
+  100% {
+  transform: scale(1, 1);
+  }
+
+}
+
+@font-face {
+  font-family: AlegreyaSansSC-Light;
+  src: url("../assets/ui/fonts/AlegreyaSansSC-Light.ttf");
+}
+
+@font-face {
+  font-family: AlegreyaSansSC-Medium;
+  src: url("../assets/ui/fonts/AlegreyaSansSC-Medium.ttf");
+}
+
+@font-face {
+  font-family: AlegreyaSansSC-Bold;
+  src: url("../assets/ui/fonts/AlegreyaSansSC-Bold.ttf");
+}
+
+@font-face {
+  font-family: AlegreyaSansSC-Black;
+  src: url("../assets/ui/fonts/AlegreyaSansSC-Black.ttf");
+}
