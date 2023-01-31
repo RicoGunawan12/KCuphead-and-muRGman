@@ -256,6 +256,10 @@ main .magical-wondergame .content-container .paragraph-container{
     align-items: center;
   }
 
+  main .magical-wondergame .title{
+    font-size: 5vw;
+  }
+
   main .magical-wondergame .content-container iframe{
     width: calc(90vw - 4px);
     height: calc(80vh - 4px);
@@ -526,6 +530,19 @@ main .awards .steam-and-webby .hide{
   main .awards .game-developers-choice-awards-and-sxsw,
   main .awards .steam-and-webby{
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main .awards .the-game-awards-and-bafta-winner-games .left,
+  main .awards .the-game-awards-and-bafta-winner-games .right,
+  main .awards .game-developers-choice-awards-and-sxsw .left,
+  main .awards .game-developers-choice-awards-and-sxsw .right,
+  main .awards .steam-and-webby .left,
+  main .awards .steam-and-webby .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   main .awards .the-game-awards-and-bafta-winner-games .middle .vertical-line,
@@ -541,14 +558,77 @@ main .awards .steam-and-webby .hide{
     width: 100%;
   } 
 
+  main .dice-annual-awards{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main .dice-annual-awards p{
+    margin: 50px 0;
+    text-align: center;
+  }
+
+}
+
+main .cuphead-sheet-music{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 75px 0;
+  background-color: var(--light-blue);
+  width: 100%;
+}
+
+main .cuphead-sheet-music p:first-child{
+  font-family: AlegreyaSansSC-Black;
+  font-size: 3vw;
+}
+
+main .cuphead-sheet-music p:nth-child(2){
+  font-family: 'Roboto', sans-serif;
+  font-size: 2vw;
+  font-weight: bolder;
+  margin-bottom: 50px;
+}
+
+main .cuphead-sheet-music img{
+  width: 60vw;
+}
+
+main .cuphead-sheet-music a{
+  font-family: AlegreyaSansSC-Black;
+  font-size: 2.75vw;
+  text-decoration: none;
+  color: var(--dark-purple);
+}
+
+main .cuphead-sheet-music a:hover{
+  color: var(--red);
+}
+
+main .company-logos{
+  width: 100%;
+  padding: 90px 0 70px 0;
+  background-color: var(--super-light-gray);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+main .company-logos img{
+  width: 90vw;
 }
 
 /* Main */
 
 /* Footer */
 
-footer{
-  height: 500px;
+footer p{
+  padding: 30px 50px 50px 75px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 1vw;
 }
 
 /* Footer */
