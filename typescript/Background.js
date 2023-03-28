@@ -18,6 +18,7 @@ export default class Background {
 
     DrawUpperBackground() {
         this.ctx.drawImage(UPPER, 0, 0, this.windowWidth, this.windowHeight - 200);
+        this.ctx.drawImage()
     }
 
     DrawTable() {
