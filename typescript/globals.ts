@@ -7,14 +7,15 @@ const CANVAS: HTMLCanvasElement = document.getElementById("canvas") as HTMLCanva
 /**
  * Set canvas's default width and height
  */
-CANVAS.width = 1440;
-CANVAS.height = 735;
+CANVAS.width = 800;
+CANVAS.height = 450;
 
 /**
  * 2d canvas context API that is used for every render.
  */
 export
 const CTX: CanvasRenderingContext2D  = CANVAS.getContext("2d") as CanvasRenderingContext2D;
+CTX.imageSmoothingEnabled = false;
 
 /**
  * Defines the game FPS

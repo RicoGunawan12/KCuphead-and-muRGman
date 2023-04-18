@@ -1,11 +1,18 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.ctx = exports.canvas = void 0;
 /**
  * Canvas object that is used by every object that is rendered.
  */
-exports.canvas = document.getElementById("canvas");
+export const CANVAS = document.getElementById("canvas");
+/**
+ * Set canvas's default width and height
+ */
+CANVAS.width = 800;
+CANVAS.height = 450;
 /**
  * 2d canvas context API that is used for every render.
  */
-exports.ctx = exports.canvas.getContext("2d");
+export const CTX = CANVAS.getContext("2d");
+CTX.imageSmoothingEnabled = false;
+/**
+ * Defines the game FPS
+ */
+export const FPS = 60;
