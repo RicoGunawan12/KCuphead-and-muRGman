@@ -9,13 +9,13 @@ const rightChipStack = new Background(CTX, CANVAS.width - 100, CANVAS.height - 1
 export
 class BackgroundFacade {
 
-    static displayBackground() {
+    static renderBackground(): void {
 
         painting.render();
 
     }
 
-    static displayForeground() {
+    static renderForeground(): void {
 
         leftChipStack.render();
         rightChipStack.render();

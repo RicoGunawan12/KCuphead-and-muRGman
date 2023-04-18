@@ -1,8 +1,6 @@
-import { Background } from "./classes/Background.js";
 import { BackgroundFacade } from "./facades/BackgroundFacade.js";
+import { TableFacade } from "./facades/TableFacade.js";
 import { CANVAS, CTX, FPS } from "./globals.js";
-
-const table: Background = new Background(CTX, 0, CANVAS.height - 300, CANVAS.width, 300, '../assets/game/king dice/background/Table/kd_bg_table.png');
 
 /**
  * Defines how to clear the canvas at each animation frame
@@ -15,9 +13,9 @@ function clear(): void {
  * Defines how to render the new animation frame
  */
 function render(): void {
-    BackgroundFacade.displayBackground();
-    table.render();
-    BackgroundFacade.displayForeground();
+    BackgroundFacade.renderBackground();
+    TableFacade.render();
+    BackgroundFacade.renderForeground();
 }
 
 /**

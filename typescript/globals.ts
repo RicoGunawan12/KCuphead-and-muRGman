@@ -21,4 +21,4 @@ CTX.imageSmoothingEnabled = false;
  * Defines the game FPS
  */
 export
-const FPS = 60;
+const FPS: number = 60;
